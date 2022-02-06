@@ -2,7 +2,7 @@
 {
     public interface ISourceDirectiveBuilder
     {
-        ISourceDirectiveBuilder Directive(string dependencyNamespace);
+        ISourceDirectiveBuilder Directive(string directiveNamespace);
         ISourceContentBuilder Namespace(string namespaceName);
     }
 }
