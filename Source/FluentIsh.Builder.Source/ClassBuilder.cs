@@ -5,7 +5,7 @@ using FluentIsh.Builder.Source.Interfaces.Shared;
 [assembly: InternalsVisibleTo("FluentIsh.Builder.Source.Class.Tests")]
 namespace FluentIsh.Builder.Source
 {
-    internal partial class ClassBuilder: ISourceObjectGenerator, IClassAccessibilityPicker
+    internal class ClassBuilder: ISourceObjectGenerator, IClassAccessibilityPicker
     {
         public ClassBuilder()
         {

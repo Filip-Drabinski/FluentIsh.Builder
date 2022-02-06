@@ -6,7 +6,7 @@ using FluentIsh.Builder.Source.Interfaces.Shared;
 [assembly: InternalsVisibleTo("FluentIsh.Builder.Source.Delegate.Tests")]
 namespace FluentIsh.Builder.Source
 {
-    internal partial class DelegateBuilder: ISourceObjectGenerator
+    internal class DelegateBuilder: ISourceObjectGenerator
     {
         #region ISourceObjectGenerator
         public string Render(int nestingCount)
