@@ -1,6 +1,7 @@
 ﻿using FluentIsh.Builder.Source.Interfaces.Class;
+using FluentIsh.Builder.Source.Interfaces.Shared;
 
-namespace FluentIsh.Builder.Source.ClassPartials
+namespace FluentIsh.Builder.Source
 {
     internal partial class ClassBuilder:IClassAccessibilityPicker
     {
@@ -18,5 +19,6 @@ namespace FluentIsh.Builder.Source.ClassPartials
         {
             throw new System.NotImplementedException();
         }
+
     }
 }
