@@ -1,6 +1,6 @@
 ﻿namespace FluentIsh.Builder.Source.Interfaces.Source
 {
-    public interface ISourceGenerator
+    public interface ISourceRenderer
     {
         string Render();
     }

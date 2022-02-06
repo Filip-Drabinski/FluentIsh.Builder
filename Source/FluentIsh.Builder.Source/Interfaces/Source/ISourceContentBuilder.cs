@@ -1,4 +1,4 @@
-﻿using FluentIsh.Builder.Source.Interfaces.Shared;
+﻿ using FluentIsh.Builder.Source.Interfaces.Shared;
 using FluentIsh.Builder.Source.Interfaces.Shared.Delegates;
 
 namespace FluentIsh.Builder.Source.Interfaces.Source
@@ -10,6 +10,6 @@ namespace FluentIsh.Builder.Source.Interfaces.Source
         ISourceContentBuilder WithEnum(EnumBuilderDelegate builder);
         ISourceContentBuilder WithDelegate(DelegateBuilderDelegate builder);
         ISourceContentBuilder WithClass(CustomSectionBuilderDelegate builder);
-        ISourceGenerator End();
+        ISourceRenderer End();
     }
 }
