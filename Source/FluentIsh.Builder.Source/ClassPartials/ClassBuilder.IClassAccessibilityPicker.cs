@@ -1,5 +1,4 @@
 ﻿using FluentIsh.Builder.Source.Interfaces.Class;
-using FluentIsh.Builder.Source.Interfaces.Shared;
 
 namespace FluentIsh.Builder.Source
 {

@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="FluentIsh.Builder.Source.csproj.DotSettings" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Interfaces\Delegate\Delegates\" />
     <Folder Include="Interfaces\Enum\Delegates\" />
     <Folder Include="Interfaces\Interface\Delegates\" />

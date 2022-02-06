@@ -1,5 +1,4 @@
 ﻿using System.Runtime.CompilerServices;
-using FluentIsh.Builder.Source.Interfaces;
 using FluentIsh.Builder.Source.Interfaces.Source;
 
 [assembly: InternalsVisibleTo("FluentIsh.Builder.Source.Tests")]

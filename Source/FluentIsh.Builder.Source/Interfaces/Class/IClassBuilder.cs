@@ -1,5 +1,4 @@
 ﻿using FluentIsh.Builder.Source.Interfaces.Class.Delegates;
-using FluentIsh.Builder.Source.Interfaces.Shared;
 using FluentIsh.Builder.Source.Interfaces.Shared.Delegates;
 
 namespace FluentIsh.Builder.Source.Interfaces.Class
