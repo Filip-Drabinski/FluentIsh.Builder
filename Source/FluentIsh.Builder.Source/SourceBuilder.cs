@@ -1,6 +1,8 @@
-﻿using FluentIsh.Builder.Source.Interfaces;
+﻿using System.Runtime.CompilerServices;
+using FluentIsh.Builder.Source.Interfaces;
 using FluentIsh.Builder.Source.Interfaces.Source;
 
+[assembly: InternalsVisibleTo("FluentIsh.Builder.Source.Tests")]
 namespace FluentIsh.Builder.Source
 {
     public class SourceBuilder : ISourceBuilder
@@ -11,7 +13,7 @@ namespace FluentIsh.Builder.Source
             return new SourceBuilder();
         }
 
-        private SourceBuilder()
+        internal SourceBuilder()
         {
 
         }

@@ -1,6 +1,4 @@
-﻿using FluentIsh.Builder.Source.Interfaces.Source;
-
-namespace FluentIsh.Builder.Source.Interfaces
+﻿namespace FluentIsh.Builder.Source.Interfaces.Source
 {
     public interface ISourceBuilder
     {

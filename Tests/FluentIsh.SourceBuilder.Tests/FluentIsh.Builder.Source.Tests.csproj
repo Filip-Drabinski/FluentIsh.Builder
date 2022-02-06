@@ -19,4 +19,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Source\FluentIsh.Builder.Source\FluentIsh.Builder.Source.csproj" />
+  </ItemGroup>
+
 </Project>

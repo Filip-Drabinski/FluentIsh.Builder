@@ -1,7 +1,14 @@
-﻿namespace FluentIsh.Builder.Source
+﻿using System.Runtime.CompilerServices;
+using FluentIsh.Builder.Source.Interfaces.Class;
+
+[assembly: InternalsVisibleTo("FluentIsh.Builder.Source.Class.Tests")]
+namespace FluentIsh.Builder.Source
 {
-    internal class ClassBuilder
+    internal partial class ClassBuilder
     {
-        
+        public ClassBuilder()
+        {
+            
+        }
     }
 }

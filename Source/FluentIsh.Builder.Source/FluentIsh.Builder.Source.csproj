@@ -5,10 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="DelegatePartials\" />
+    <Folder Include="EnumPartials\" />
     <Folder Include="Interfaces\Delegate\Delegates\" />
     <Folder Include="Interfaces\Enum\Delegates\" />
     <Folder Include="Interfaces\Interface\Delegates\" />
     <Folder Include="Interfaces\Source\Delegates\" />
+    <Folder Include="InterfacePartials\" />
+    <Folder Include="StructPartials\" />
   </ItemGroup>
 
 </Project>
