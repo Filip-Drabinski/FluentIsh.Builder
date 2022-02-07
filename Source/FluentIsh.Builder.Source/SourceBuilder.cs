@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Text;
 using FluentIsh.Builder.Source.Interfaces.Class;
 using FluentIsh.Builder.Source.Interfaces.Shared.Delegates;
 using FluentIsh.Builder.Source.Interfaces.Source;
@@ -84,7 +86,19 @@ namespace FluentIsh.Builder.Source
         #region ISourceRenderer
         public string Render()
         {
-            throw new System.NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+            _directives.ForEach(dire=> sb.AppendLine($"using {dire};"));
+            if(_directives.Any()) sb.AppendLine();
+            sb.AppendLine($"namespace {_namespace}");
+            sb.AppendLine("{");
+            _delegates.ForEach(delegateBuilder=>sb.Append(delegateBuilder.Render(1)));
+            _classes.ForEach(classBuilder=>sb.Append(classBuilder.Render(1)));
+            _structs.ForEach(structBuilder=>sb.Append(structBuilder.Render(1)));
+            _intefaces.ForEach(interfaceBuilder=>sb.Append(interfaceBuilder.Render(1)));
+            _enums.ForEach(enumBuilder=>sb.Append(enumBuilder.Render(1)));
+            _customSections.ForEach(customSection=>sb.Append(customSection));
+            sb.AppendLine("}");
+            return sb.ToString();
         }
         #endregion
     }
