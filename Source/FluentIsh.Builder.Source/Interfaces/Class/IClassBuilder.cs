@@ -5,14 +5,14 @@ namespace FluentIsh.Builder.Source.Interfaces.Class
 {
     public interface IClassBuilder
     {
+        IClassBuilder WithCustomSection(CustomSectionBuilderDelegate builder);
+        IClassBuilder WithClass(ClassBuilderDelegate builder);
         IClassBuilder WithField(ClassFieldBuilderDelegate classFieldBuilder);
         IClassBuilder WithProperty(ClassPropertyBuilderDelegate classPropertyBuilder);
         IClassBuilder WithFunction(ClassFunctionBuilderDelegate classFunctionBuilder);
-        IClassBuilder WithClass(ClassBuilderDelegate builder);
-        IClassBuilder WithStruct(StructBuilderDelegate builder);
-        IClassBuilder WithEnum(EnumBuilderDelegate builder);
-        IClassBuilder WithDelegate(DelegateBuilderDelegate builder);
-        IClassBuilder WithClass(CustomSectionBuilderDelegate builder);
+        //IClassBuilder WithStruct(StructBuilderDelegate builder);
+        //IClassBuilder WithEnum(EnumBuilderDelegate builder);
+        //IClassBuilder WithDelegate(DelegateBuilderDelegate builder);
     }
 
 }

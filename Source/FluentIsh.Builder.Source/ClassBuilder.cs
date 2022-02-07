@@ -54,6 +54,11 @@ namespace FluentIsh.Builder.Source
             throw new System.NotImplementedException();
         }
 
+        public IClassBuilder WithCustomSection(CustomSectionBuilderDelegate builder)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public IClassBuilder WithClass(ClassBuilderDelegate builder)
         {
             throw new System.NotImplementedException();
@@ -74,10 +79,6 @@ namespace FluentIsh.Builder.Source
             throw new System.NotImplementedException();
         }
 
-        public IClassBuilder WithClass(CustomSectionBuilderDelegate builder)
-        {
-            throw new System.NotImplementedException();
-        }
         #endregion
     }
 }

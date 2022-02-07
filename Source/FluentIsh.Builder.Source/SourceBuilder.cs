@@ -46,6 +46,12 @@ namespace FluentIsh.Builder.Source
         }
         #endregion
         #region ISourceContentBuilder
+        public ISourceContentBuilder WithCustomSection(CustomSectionBuilderDelegate builder)
+        {
+            var cs = builder();
+            _customSections.Add(cs);
+            return this;
+        }
         public ISourceContentBuilder WithClass(ClassBuilderDelegate builder)
         {
             var cb = builder(new ClassBuilder()) as ClassBuilder;
@@ -68,12 +74,6 @@ namespace FluentIsh.Builder.Source
         {
             var db = builder(new DelegateBuilder()) as DelegateBuilder;
             _delegates.Add(db);
-            return this;
-        }
-        public ISourceContentBuilder WithClass(CustomSectionBuilderDelegate builder)
-        {
-            var cs = builder();
-            _customSections.Add(cs);
             return this;
         }
         public ISourceRenderer End()

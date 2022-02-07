@@ -4,11 +4,11 @@ namespace FluentIsh.Builder.Source.Interfaces.Source
 {
     public interface ISourceContentBuilder
     {
+        ISourceContentBuilder WithCustomSection(CustomSectionBuilderDelegate builder);
         ISourceContentBuilder WithClass(ClassBuilderDelegate builder);
-        ISourceContentBuilder WithStruct(StructBuilderDelegate builder);
-        ISourceContentBuilder WithEnum(EnumBuilderDelegate builder);
-        ISourceContentBuilder WithDelegate(DelegateBuilderDelegate builder);
-        ISourceContentBuilder WithClass(CustomSectionBuilderDelegate builder);
+        //ISourceContentBuilder WithStruct(StructBuilderDelegate builder);
+        //ISourceContentBuilder WithEnum(EnumBuilderDelegate builder);
+        //ISourceContentBuilder WithDelegate(DelegateBuilderDelegate builder);
         ISourceRenderer End();
     }
 }
